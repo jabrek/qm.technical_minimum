@@ -2,14 +2,8 @@
 # https://quantum.cloud.ibm.com/docs/en/guides/quick-start
 from qiskit import QuantumCircuit, transpile
 from qiskit_aer import AerSimulator
-from qiskit.primitives import StatevectorSampler
 from qiskit.visualization import plot_histogram
 import matplotlib.pyplot as plt
-
-
-def useStateVectorSampler(qc):
-    simulator = StatevectorSampler()
-    job = simulator.run(qc)
 
 
 def useAerSimulator(qc):
